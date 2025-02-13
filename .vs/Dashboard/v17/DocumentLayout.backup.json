@@ -1,0 +1,656 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\components\\empleadoProfile.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:components\\empleadoProfile.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\components\\listEmpleados.jsx||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:components\\listEmpleados.jsx||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\empleado\\lista\\getlista.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pages\\empleado\\lista\\getlista.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\empleado\\Registrar\\newEmpleado.tsx||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pages\\empleado\\Registrar\\newEmpleado.tsx||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\empleado\\Registrar\\newEmpleado.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pages\\empleado\\Registrar\\newEmpleado.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\empleado\\getEmpleado.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\empleado\\getEmpleado.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\NavMenu\\NavMenu.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pages\\NavMenu\\NavMenu.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\buttons\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pages\\buttons\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\schemas\\EmpleadoSchema.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:schemas\\EmpleadoSchema.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\empleado\\postServerActions.js||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\empleado\\postServerActions.js||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\components\\Search.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:components\\Search.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\empleado\\createPost.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\empleado\\createPost.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\blog\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\blog\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\components\\form\\Button.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:components\\form\\Button.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\ui\\acme-logo.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\acme-logo.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\.next\\types\\app\\page.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.next\\types\\app\\page.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\dashboard\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\dashboard\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\lib\\utils.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\lib\\utils.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\node_modules\\react-hook-form\\dist\\types\\resolvers.d.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:node_modules\\react-hook-form\\dist\\types\\resolvers.d.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\node_modules\\react-hook-form\\dist\\types\\resolvers.d.ts.map||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:node_modules\\react-hook-form\\dist\\types\\resolvers.d.ts.map||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\ui\\global.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\global.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\layout.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\layout.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\next.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:next.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\NavMenu\\NavMenu.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pages\\NavMenu\\NavMenu.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\blog\\postProp\\postProp.js||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pages\\blog\\postProp\\postProp.js||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\ui\\invoices\\pagination.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\invoices\\pagination.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\dashboard\\invoices\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\dashboard\\invoices\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\dashboard\\layout.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\dashboard\\layout.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\blog\\post\\[id].js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pages\\blog\\post\\[id].js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\ui\\dashboard\\revenue-chart.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\dashboard\\revenue-chart.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\lib\\definitions.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\lib\\definitions.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\query\\route.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\query\\route.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\.env.example||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.env.example||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\ui\\dashboard\\nav-links.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\dashboard\\nav-links.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\ui\\fonts.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\fonts.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\ui\\button.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\button.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "revenue-chart.tsx",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\ui\\dashboard\\revenue-chart.tsx",
+              "RelativeDocumentMoniker": "app\\ui\\dashboard\\revenue-chart.tsx",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\ui\\dashboard\\revenue-chart.tsx",
+              "RelativeToolTip": "app\\ui\\dashboard\\revenue-chart.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-17T19:41:19.518Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "page.tsx",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\page.tsx",
+              "RelativeDocumentMoniker": "app\\page.tsx",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\page.tsx",
+              "RelativeToolTip": "app\\page.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-15T20:05:31.06Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "getlista.js",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\empleado\\lista\\getlista.js",
+              "RelativeDocumentMoniker": "pages\\empleado\\lista\\getlista.js",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\empleado\\lista\\getlista.js",
+              "RelativeToolTip": "pages\\empleado\\lista\\getlista.js",
+              "ViewState": "AgIAACsAAAAAAAAAAAAowDoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-30T19:40:12.84Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "getEmpleado.js",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\empleado\\getEmpleado.js",
+              "RelativeDocumentMoniker": "app\\empleado\\getEmpleado.js",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\empleado\\getEmpleado.js",
+              "RelativeToolTip": "app\\empleado\\getEmpleado.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-30T20:00:57.729Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\buttons\\index.js",
+              "RelativeDocumentMoniker": "pages\\buttons\\index.js",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\buttons\\index.js",
+              "RelativeToolTip": "pages\\buttons\\index.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-26T18:20:23.585Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "listEmpleados.jsx",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\components\\listEmpleados.jsx",
+              "RelativeDocumentMoniker": "components\\listEmpleados.jsx",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\components\\listEmpleados.jsx",
+              "RelativeToolTip": "components\\listEmpleados.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-08T19:10:57.097Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Search.jsx",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\components\\Search.jsx",
+              "RelativeDocumentMoniker": "components\\Search.jsx",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\components\\Search.jsx",
+              "RelativeToolTip": "components\\Search.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-09T21:16:13.728Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "newEmpleado.tsx",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\empleado\\Registrar\\newEmpleado.tsx",
+              "RelativeDocumentMoniker": "pages\\empleado\\Registrar\\newEmpleado.tsx",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\empleado\\Registrar\\newEmpleado.tsx",
+              "RelativeToolTip": "pages\\empleado\\Registrar\\newEmpleado.tsx",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAkwBwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-31T18:44:23.994Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NavMenu.tsx",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\NavMenu\\NavMenu.tsx",
+              "RelativeDocumentMoniker": "pages\\NavMenu\\NavMenu.tsx",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\NavMenu\\NavMenu.tsx",
+              "RelativeToolTip": "pages\\NavMenu\\NavMenu.tsx",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAwwAkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-07T22:13:43.852Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "newEmpleado.css",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\empleado\\Registrar\\newEmpleado.css",
+              "RelativeDocumentMoniker": "pages\\empleado\\Registrar\\newEmpleado.css",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\empleado\\Registrar\\newEmpleado.css",
+              "RelativeToolTip": "pages\\empleado\\Registrar\\newEmpleado.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-14T20:38:46.367Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "postServerActions.js",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\empleado\\postServerActions.js",
+              "RelativeDocumentMoniker": "app\\empleado\\postServerActions.js",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\empleado\\postServerActions.js",
+              "RelativeToolTip": "app\\empleado\\postServerActions.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-14T22:41:22.429Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "createPost.ts",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\empleado\\createPost.ts",
+              "RelativeDocumentMoniker": "app\\empleado\\createPost.ts",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\empleado\\createPost.ts",
+              "RelativeToolTip": "app\\empleado\\createPost.ts",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-14T23:24:20.653Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmpleadoSchema.ts",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\schemas\\EmpleadoSchema.ts",
+              "RelativeDocumentMoniker": "schemas\\EmpleadoSchema.ts",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\schemas\\EmpleadoSchema.ts",
+              "RelativeToolTip": "schemas\\EmpleadoSchema.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-14T22:43:15.894Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "empleadoProfile.tsx",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\components\\empleadoProfile.tsx",
+              "RelativeDocumentMoniker": "components\\empleadoProfile.tsx",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\components\\empleadoProfile.tsx",
+              "RelativeToolTip": "components\\empleadoProfile.tsx",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswCIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-23T20:31:33.401Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{01321f1c-6c9e-3b5b-9c0f-66d2a373c254}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Button.tsx",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\components\\form\\Button.tsx",
+              "RelativeDocumentMoniker": "components\\form\\Button.tsx",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\components\\form\\Button.tsx",
+              "RelativeToolTip": "components\\form\\Button.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-14T21:08:07.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "acme-logo.tsx",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\ui\\acme-logo.tsx",
+              "RelativeDocumentMoniker": "app\\ui\\acme-logo.tsx",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\ui\\acme-logo.tsx",
+              "RelativeToolTip": "app\\ui\\acme-logo.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-14T20:53:58.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "utils.ts",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\lib\\utils.ts",
+              "RelativeDocumentMoniker": "app\\lib\\utils.ts",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\lib\\utils.ts",
+              "RelativeToolTip": "app\\lib\\utils.ts",
+              "ViewState": "AgIAADcAAAAAAAAAAAAQwEMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-14T20:25:19.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "resolvers.d.ts.map",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\node_modules\\react-hook-form\\dist\\types\\resolvers.d.ts.map",
+              "RelativeDocumentMoniker": "node_modules\\react-hook-form\\dist\\types\\resolvers.d.ts.map",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\node_modules\\react-hook-form\\dist\\types\\resolvers.d.ts.map",
+              "RelativeToolTip": "node_modules\\react-hook-form\\dist\\types\\resolvers.d.ts.map",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-10T21:21:54.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "resolvers.d.ts",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\node_modules\\react-hook-form\\dist\\types\\resolvers.d.ts",
+              "RelativeDocumentMoniker": "node_modules\\react-hook-form\\dist\\types\\resolvers.d.ts",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\node_modules\\react-hook-form\\dist\\types\\resolvers.d.ts",
+              "RelativeToolTip": "node_modules\\react-hook-form\\dist\\types\\resolvers.d.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-10T21:21:50.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "global.css",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\ui\\global.css",
+              "RelativeDocumentMoniker": "app\\ui\\global.css",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\ui\\global.css",
+              "RelativeToolTip": "app\\ui\\global.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-10T20:28:52.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "layout.tsx",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\layout.tsx",
+              "RelativeDocumentMoniker": "app\\layout.tsx",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\layout.tsx",
+              "RelativeToolTip": "app\\layout.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-10T19:58:45.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "page.ts",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\.next\\types\\app\\page.ts",
+              "RelativeDocumentMoniker": ".next\\types\\app\\page.ts",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\.next\\types\\app\\page.ts",
+              "RelativeToolTip": ".next\\types\\app\\page.ts",
+              "ViewState": "AgIAABAAAAAAAAAAAAAiwCEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-08T13:52:56.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "NavMenu.css",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\NavMenu\\NavMenu.css",
+              "RelativeDocumentMoniker": "pages\\NavMenu\\NavMenu.css",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\NavMenu\\NavMenu.css",
+              "RelativeToolTip": "pages\\NavMenu\\NavMenu.css",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAcwBgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-07T22:37:06.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "pagination.tsx",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\ui\\invoices\\pagination.tsx",
+              "RelativeDocumentMoniker": "app\\ui\\invoices\\pagination.tsx",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\ui\\invoices\\pagination.tsx",
+              "RelativeToolTip": "app\\ui\\invoices\\pagination.tsx",
+              "ViewState": "AgIAABYAAAAAAAAAAIBHwBkAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-31T16:50:47.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "next.config.ts",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\next.config.ts",
+              "RelativeDocumentMoniker": "next.config.ts",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\next.config.ts",
+              "RelativeToolTip": "next.config.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-31T16:02:21.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "postProp.js",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\blog\\postProp\\postProp.js",
+              "RelativeDocumentMoniker": "pages\\blog\\postProp\\postProp.js",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\blog\\postProp\\postProp.js",
+              "RelativeToolTip": "pages\\blog\\postProp\\postProp.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-26T20:48:42.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "[id].js",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\blog\\post\\[id].js",
+              "RelativeDocumentMoniker": "pages\\blog\\post\\[id].js",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\pages\\blog\\post\\[id].js",
+              "RelativeToolTip": "pages\\blog\\post\\[id].js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-26T18:01:36.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "page.tsx",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\blog\\page.tsx",
+              "RelativeDocumentMoniker": "app\\blog\\page.tsx",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\blog\\page.tsx",
+              "RelativeToolTip": "app\\blog\\page.tsx",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAADIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-18T11:57:32.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "definitions.ts",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\lib\\definitions.ts",
+              "RelativeDocumentMoniker": "app\\lib\\definitions.ts",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\lib\\definitions.ts",
+              "RelativeToolTip": "app\\lib\\definitions.ts",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBZwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-18T11:32:08.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "route.ts",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\query\\route.ts",
+              "RelativeDocumentMoniker": "app\\query\\route.ts",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\query\\route.ts",
+              "RelativeToolTip": "app\\query\\route.ts",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAuwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-17T16:19:20.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": ".env.example",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\.env.example",
+              "RelativeDocumentMoniker": ".env.example",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\.env.example",
+              "RelativeToolTip": ".env.example",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-16T19:15:05.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "nav-links.tsx",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\ui\\dashboard\\nav-links.tsx",
+              "RelativeDocumentMoniker": "app\\ui\\dashboard\\nav-links.tsx",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\ui\\dashboard\\nav-links.tsx",
+              "RelativeToolTip": "app\\ui\\dashboard\\nav-links.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-16T12:18:08.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "layout.tsx",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\dashboard\\layout.tsx",
+              "RelativeDocumentMoniker": "app\\dashboard\\layout.tsx",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\dashboard\\layout.tsx",
+              "RelativeToolTip": "app\\dashboard\\layout.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-16T12:03:55.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "page.tsx",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\dashboard\\invoices\\page.tsx",
+              "RelativeDocumentMoniker": "app\\dashboard\\invoices\\page.tsx",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\dashboard\\invoices\\page.tsx",
+              "RelativeToolTip": "app\\dashboard\\invoices\\page.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-16T12:02:29.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "page.tsx",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\dashboard\\page.tsx",
+              "RelativeDocumentMoniker": "app\\dashboard\\page.tsx",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\dashboard\\page.tsx",
+              "RelativeToolTip": "app\\dashboard\\page.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-16T11:58:12.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "fonts.ts",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\ui\\fonts.ts",
+              "RelativeDocumentMoniker": "app\\ui\\fonts.ts",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\ui\\fonts.ts",
+              "RelativeToolTip": "app\\ui\\fonts.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-15T22:48:23.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "button.tsx",
+              "DocumentMoniker": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\ui\\button.tsx",
+              "RelativeDocumentMoniker": "app\\ui\\button.tsx",
+              "ToolTip": "C:\\Carlos\\Personal\\Programacion\\Next\\Dashboard\\app\\ui\\button.tsx",
+              "RelativeToolTip": "app\\ui\\button.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-15T20:12:21.616Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

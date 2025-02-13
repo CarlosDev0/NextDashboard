@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+* {
+    padding: 2px;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    /*box-sizing: border-box;*/
+}
+
+body {
+    background: rgb(36, 40, 47);
+    /*color: white;*/
+}
+
+.App {
+    max-width: 500px;
+    margin: 20rem auto;
+}
+
+.title {
+    text-align: center;
+}
+
+.successMessage {
+    font-size:small;
+    color: green;
+}
+
+.errorMessage {
+    font-size: small;
+    color: red;
+}

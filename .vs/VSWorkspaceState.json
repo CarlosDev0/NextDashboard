@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\ui",
+    "\\components",
+    "\\components\\form",
+    "\\pages",
+    "\\pages\\blog",
+    "\\pages\\buttons",
+    "\\pages\\empleado",
+    "\\pages\\empleado\\lista",
+    "\\pages\\empleado\\Registrar"
+  ],
+  "PreviewInSolutionExplorer": false
+}
