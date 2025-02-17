@@ -2,6 +2,9 @@ import RevenueChart from "@/app/ui/dashboard/revenue-chart";
 import { lusitana } from "@/app/ui/fonts";
 import { fetchRevenue } from "@/app/lib/data";
 import { NextResponse } from "next/server";
+
+export const dynamic = "force-dynamic"; // 🔥 Prevents pre-rendering
+
 export default async function Page() {
   if (process.env.NODE_ENV != "production") {
     return NextResponse.json(
