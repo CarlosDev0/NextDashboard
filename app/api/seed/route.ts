@@ -1,5 +1,5 @@
 import bcrypt from "bcrypt";
-import { db } from "@vercel/postgres";
+import { db, VercelPoolClient } from "@vercel/postgres";
 import {
   invoices,
   customers,
@@ -8,9 +8,43 @@ import {
 } from "../../lib/placeholder-data";
 import { NextResponse } from "next/server";
 
-const client = await db.connect();
+export async function GET() {
+  if (process.env.NODE_ENV === "production") {
+    return NextResponse.json(
+      { error: "Seeding is disabled in production" },
+      { status: 403 }
+    );
+  }
 
-async function seedUsers() {
+  if (!process.env.DATABASE_URL) {
+    return NextResponse.json(
+      { error: "Missing database connection." },
+      { status: 500 }
+    );
+  }
+  //return Response.json({
+  //  message:
+  //    'Uncomment this file and remove this line. You can delete this file when you are finished.',
+  //});
+  try {
+    const client = await db.connect(); // 🔥 Move connection inside function
+
+    await client.sql`BEGIN`;
+    await seedUsers(client);
+    await seedCustomers(client);
+    await seedInvoices(client);
+    await seedRevenue(client);
+    await client.sql`COMMIT`;
+
+    return Response.json({ message: "Database seeded successfully" });
+  } catch (error) {
+    //await client.sql`ROLLBACK`;
+    return Response.json({ error }, { status: 500 });
+  }
+}
+//const client = await db.connect();
+
+async function seedUsers(client: VercelPoolClient) {
   await client.sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
   await client.sql`
      CREATE TABLE IF NOT EXISTS users (
@@ -35,7 +69,7 @@ async function seedUsers() {
   return insertedUsers;
 }
 
-async function seedInvoices() {
+async function seedInvoices(client: VercelPoolClient) {
   await client.sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
 
   await client.sql`
@@ -61,7 +95,7 @@ async function seedInvoices() {
   return insertedInvoices;
 }
 
-async function seedCustomers() {
+async function seedCustomers(client: VercelPoolClient) {
   await client.sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
 
   await client.sql`
@@ -86,7 +120,7 @@ async function seedCustomers() {
   return insertedCustomers;
 }
 
-async function seedRevenue() {
+async function seedRevenue(client: VercelPoolClient) {
   await client.sql`
      CREATE TABLE IF NOT EXISTS revenue (
        month VARCHAR(4) NOT NULL UNIQUE,
@@ -105,32 +139,4 @@ async function seedRevenue() {
   );
 
   return insertedRevenue;
-}
-
-export async function GET() {
-  if (process.env.NODE_ENV !== "production") {
-    if (!process.env.DATABASE_URL) {
-      return NextResponse.json(
-        { error: "Missing database connection." },
-        { status: 500 }
-      );
-    }
-    //return Response.json({
-    //  message:
-    //    'Uncomment this file and remove this line. You can delete this file when you are finished.',
-    //});
-    try {
-      await client.sql`BEGIN`;
-      await seedUsers();
-      await seedCustomers();
-      await seedInvoices();
-      await seedRevenue();
-      await client.sql`COMMIT`;
-
-      return Response.json({ message: "Database seeded successfully" });
-    } catch (error) {
-      await client.sql`ROLLBACK`;
-      return Response.json({ error }, { status: 500 });
-    }
-  }
 }
