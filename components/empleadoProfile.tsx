@@ -5,7 +5,10 @@ import { empleadoTemplate } from "./componentsDto";
 /*import FormField from "./form/FormField";*/
 /*import { Grid } from "semantic-ui-react";*/
 
-const EmpleadoProfile = (empleado: empleadoTemplate) => {
+const EmpleadoProfile = ({ empleado }: { empleado: empleadoTemplate }) => {
+  if (!empleado || !empleado.cedula) {
+    return <p>Invalid employee data</p>; // Handle cases where empleado is undefined
+  }
   const [selectedOC, setSelectedOC] = useState<IPurchaseOrder | undefined>(
     undefined
   );
