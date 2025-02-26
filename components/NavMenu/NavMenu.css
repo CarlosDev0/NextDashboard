@@ -1,32 +1,32 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: system-ui;
+  font-family: system-ui;
 }
 
 nav {
-    padding: 10px;
-    margin-bottom: 10px;
-    background: darkcyan;
+  padding: 10px !important;
+  margin-bottom: 10px !important;
+  background: darkcyan !important;
 }
 
-ul {
-    list-style-type: none;
+.pen {
+  list-style-type: none !important;
 }
 
-li {
-    display: inline;
-    margin-right: 20px;
+.liNav {
+  display: inline !important;
+  margin-right: 20px !important;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+.linkNav {
+  text-decoration: inherit;
+  color: white !important;
 }
 
-    a:hover {
-        color: #eee;
-    }
+a:hover {
+  color: #eee;
+}

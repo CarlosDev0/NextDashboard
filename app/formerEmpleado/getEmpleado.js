@@ -1,8 +1,11 @@
+// import { ListEndpoints } from '.../Consts';
+
 let GetEmpleado = async () => {
   let token =
     "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJjYXJsb3MiLCJuYmYiOjE3MzU2NTQ2MjUsImV4cCI6MTczNTc0MTAyNSwiaWF0IjoxNzM1NjU0NjI1fQ.WDA5VxSEhjpTNDHViOvDi42c-4dkfvDWiZjslol8FZV5lqt40lgERgl6an-TRileLS_YGplPzb7vunDFVTEl6g";
   //let url = "http://localhost:5178/api/Empleado/getEmpleados";
   let url = "https://apiempleados-kt3g.onrender.com/api/Empleado/getEmpleados";
+
   let config = {};
   config["headers"] = {
     Authorization: `Bearer ${token}`,

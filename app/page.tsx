@@ -4,22 +4,14 @@ import Link from "next/link";
 import { lusitana } from "@/app/ui/fonts";
 import Image from "next/image";
 import "./ui/global.css";
-import NavMenu from "@/components/NavMenu/NavMenu";
 
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
-      {/*<div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">*/}
-      {/*        */}
-      {/*{<AcmeLogo />*/}
-
-      {/*        */}
-      {/*{<NavMenu />}*/}
-      {/*    </div>*/}
-      <div>
+      {/* <div>
         <h1>Ejemplo de Nav Menu:</h1>
         <NavMenu />
-      </div>
+      </div> */}
       <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
         <ul>
           <li>
@@ -32,7 +24,7 @@ export default function Page() {
             <Link href="/blog/post/hola-mundo">Post</Link>
           </li>
           <li>
-            <Link href="/empleado/lista/getlista">Lista Empleados</Link>
+            <Link href="/empleado/listaTS">Lista Empleados</Link>
           </li>
         </ul>
       </div>

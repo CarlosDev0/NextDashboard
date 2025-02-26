@@ -14,19 +14,36 @@ const NavMenu = () => {
           setMenuOpen(!menuOpen);
         }}
       ></div>
-      <ul>
-        <ul className={menuOpen ? "pen" : ""}></ul>
-        <li>
-          <Link href="/">Home</Link>
+      {/* <ul> */}
+      <ul className={"pen"}>
+        {/* <ul className={menuOpen ? "pen" : ""}> */}
+        {/* </ul> */}
+        <li className="liNav">
+          <Link className="linkNav" href="/">
+            Home
+          </Link>
         </li>
-        <li>
-          <Link href="/empleado/lista/getlista">Employee List</Link>
+        <li className="liNav">
+          {/* <Link href="/empleado/lista/getlista">Employee List</Link> */}
+          {/* <Link href="/app/listaTS/getLista">Employee List</Link> */}
+          <Link className="linkNav" href="/empleado/listaTS">
+            Employee List
+          </Link>
         </li>
-        <li>
-          <Link href="/buttons">Buttons</Link>
+        <li className="liNav">
+          <Link className="linkNav" href="/buttons">
+            Buttons
+          </Link>
         </li>
-        <li>
-          <Link href="/empleado/Registrar/newEmpleado">New Employee</Link>
+        <li className="liNav">
+          <Link className="linkNav" href="/empleado/newEmpleado">
+            New Employee
+          </Link>
+        </li>
+        <li className="liNav">
+          <Link className="linkNav" href="/contacto">
+            Contacto
+          </Link>
         </li>
       </ul>
     </nav>

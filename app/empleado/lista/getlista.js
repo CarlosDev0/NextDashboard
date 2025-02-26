@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
 import "./getlista.css";
-import GetEmpleado from "../../../app/empleado/getEmpleado";
+import GetEmpleado from "../../formerEmpleado/getEmpleado";
 import ListEmpleados from "../../../components/listEmpleados";
 import Search from "../../../components/Search";
 export default function GetLista() {
