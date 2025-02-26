@@ -11,6 +11,9 @@ const FooterComponent = () => {
       <a className="linkFooter" href="/contacto">
         Contacto
       </a>
+      <div>
+        <p> </p>
+      </div>
     </center>
   );
 };
