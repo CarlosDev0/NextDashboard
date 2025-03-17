@@ -84,7 +84,9 @@ const EmpleadoProfile = ({ empleado }: { empleado: empleadoTemplate }) => {
         >
           Details
         </button>
-        <div hidden={!selectedOC || !(selectedOC?.id == empleado.cedula)}>
+        <div
+          hidden={!selectedOC || !(selectedOC?.idEmpleado == empleado.cedula)}
+        >
           <div>
             <table className="table table-striped" aria-labelledby="tabelLabel">
               <thead>
