@@ -22,6 +22,7 @@ const GetEmpleado = async (): Promise<Empleado[]> => {
       "Access-Control-Allow-Origin": "*", // Use cautiously
     } as HeadersInit,
   };
+
   let { response, data } = await originalRequest<Empleado[]>(url, config);
 
   return data;
