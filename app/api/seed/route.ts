@@ -1,4 +1,4 @@
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import { db, VercelPoolClient } from "@vercel/postgres";
 import {
   invoices,
