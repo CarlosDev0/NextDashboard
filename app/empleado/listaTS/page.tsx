@@ -2,7 +2,7 @@
 import { useEffect, useState, useRef } from "react";
 import "./getListaTSX.css";
 // import GetEmpleado from "../../../app/empleado/getEmpleado";
-import GetEmpleado from "../../empleadoTS/getEmpleado";
+import GetEmpleado from "../empleadoTS/getEmpleado";
 import ListEmpleados from "../../../components/listEmpleados";
 import Search from "../../../components/Search";
 
@@ -26,6 +26,7 @@ export default function GetLista() {
     hasFetched.current = true;
 
     const fetchData = async () => {
+      console.log("listaTS l30");
       try {
         const employees = await GetEmpleado();
         setData(employees);
@@ -36,7 +37,7 @@ export default function GetLista() {
       }
     };
     fetchData();
-  }, []);
+  }, []); //[] Runs only on the first render
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;

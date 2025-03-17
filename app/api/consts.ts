@@ -2,5 +2,6 @@
 export const ListEndpoints = {
   Empleados: {
     ListEmpleados: "/Empleado/getEmpleados",
+    GetDetailEmpleado: "/Empleado/getRegistrosOfEmployee",
   },
 };

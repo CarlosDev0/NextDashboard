@@ -2,6 +2,8 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { empleadoTemplate } from "./componentsDto";
+import { getDetailEmpleado } from "@/app/api/get-detail-empleado";
+import { DetailEmpleadoDto } from "@/app/api/dto/detailEmpleadoDto";
 /*import FormField from "./form/FormField";*/
 /*import { Grid } from "semantic-ui-react";*/
 
@@ -9,7 +11,7 @@ const EmpleadoProfile = ({ empleado }: { empleado: empleadoTemplate }) => {
   if (!empleado || !empleado.cedula) {
     return <p>Invalid employee data</p>; // Handle cases where empleado is undefined
   }
-  const [selectedOC, setSelectedOC] = useState<IPurchaseOrder | undefined>(
+  const [selectedOC, setSelectedOC] = useState<DetailEmpleadoDto | undefined>(
     undefined
   );
 
@@ -29,20 +31,28 @@ const EmpleadoProfile = ({ empleado }: { empleado: empleadoTemplate }) => {
       return () => clearTimeout(timer);
     }
   }, [selectedOC]);
-  function showDetails(cedula: string) {
+  async function showDetails(idEmpleado: string) {
+    console.log("empleadoProfile.tsx L35: " + idEmpleado);
     //fetch data from server.
-    const objSelected: IPurchaseOrder = {
-      createdDate: "99",
-      name: 8,
-      description: "j",
-      id: "71776428",
-    };
-
-    setSelectedOC(objSelected);
-
-    if (cedula != objSelected.id) {
-      alert("No details available for current user");
+    try {
+      const currentDetail = await getDetailEmpleado(idEmpleado);
+      setSelectedOC(currentDetail);
+    } catch (error) {
+      return null;
     }
+
+    // const objSelected: IPurchaseOrder = {
+    //   createdDate: "99",
+    //   name: 8,
+    //   description: "j",
+    //   id: "71776428",
+    // };
+    // setSelectedOC(objSelected);
+
+    // if (currentDetail.idEmpleado) {
+    //   //if (cedula != objSelected.id) {
+    //   alert("No details available for current user");
+    // }
   }
 
   let id = empleado.cedula.slice(-1);
@@ -70,7 +80,7 @@ const EmpleadoProfile = ({ empleado }: { empleado: empleadoTemplate }) => {
         <button
           className="buttonDetail"
           type="submit"
-          onClick={() => showDetails(empleado.cedula)}
+          onClick={() => showDetails(empleado.idEmpleado)}
         >
           Details
         </button>

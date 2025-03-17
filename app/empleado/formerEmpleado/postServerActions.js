@@ -2,7 +2,7 @@
 import {
   EmpleadoSchema,
   EmpleadoSchemaType,
-} from "../../schemas/EmpleadoSchema";
+} from "../../../schemas/EmpleadoSchema";
 
 export const createEmployee = async (values) => {
   /*const [error, setError] = useState(null);*/

@@ -10,7 +10,7 @@ import {
   EmpleadoSchemaType,
 } from "../../../schemas/EmpleadoSchema";
 
-import { createEmployee } from "../../formerEmpleado/postServerActions";
+import { createEmployee } from "../formerEmpleado/postServerActions";
 import "./newEmpleado.css";
 
 export default function NewEmpleado() {
