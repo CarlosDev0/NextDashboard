@@ -5,7 +5,7 @@ interface ApiResponse<T> {
   data: T;
 }
 interface Empleado {
-  idEmpleado: number;
+  idEmpleado: string;
   nombre: string;
   cedula: string;
   estado: boolean;

@@ -1,18 +1,14 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
-import "./getListaTSX.css";
+import "./listaTS.css";
 // import GetEmpleado from "../../../app/empleado/getEmpleado";
 import GetEmpleado from "../empleadoTS/getEmpleado";
 import ListEmpleados from "../../../components/listEmpleados";
 import Search from "../../../components/Search";
+import DetalleEmpleado from "@/components/detalleempleado/DetalleEmpleado";
+import { Empleado } from "@/app/utils/interfaces/interfaces";
 
 // Define type for Empleado (Adjust based on actual API response)
-interface Empleado {
-  idEmpleado: number;
-  nombre: string;
-  cedula: string;
-  estado: boolean;
-}
 
 export default function GetLista() {
   const [data, setData] = useState<Empleado[]>([]);
@@ -20,6 +16,9 @@ export default function GetLista() {
   const [error, setError] = useState<string | null>(null);
   const [keyword, setKeyword] = useState<string>("");
   const hasFetched = useRef<boolean>(false); // 🛑 Prevents double fetching
+  const [selectedIdEmployee, setSelectedIdEmployee] = useState<string | null>(
+    null
+  );
 
   useEffect(() => {
     if (hasFetched.current) return; // If already fetched, exit
@@ -52,8 +51,12 @@ export default function GetLista() {
   };
 
   return (
-    <div className="App">
-      <div className="main-container">
+    <div className="page-layout">
+      <aside className="left-panel">
+        <h3>Left Panel</h3>
+      </aside>
+
+      <main className="main-container">
         <header>
           <h1 className="heading">Employee List</h1>
           <h3>A Simple Employee List with React and Next.js</h3>
@@ -68,9 +71,22 @@ export default function GetLista() {
             keyword={keyword}
             filterEmpleados={filterEmpleados}
           />
-          <ListEmpleados empleados={data} />
+          <ListEmpleados
+            empleados={data}
+            setSelectedIdEmployee={setSelectedIdEmployee}
+          />
         </div>
-      </div>
+      </main>
+
+      <aside className="right-panel">
+        <div className="info-box">
+          <DetalleEmpleado idEmpleado={selectedIdEmployee || ""} />
+        </div>
+        <div className="info-box">
+          <h3>Company Updates</h3>
+          <p>Latest news and updates about employees...</p>
+        </div>
+      </aside>
     </div>
   );
 }
