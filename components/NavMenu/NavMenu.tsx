@@ -45,6 +45,11 @@ const NavMenu = () => {
             Contacto
           </Link>
         </li>
+        <li className="liNav">
+          <Link className="linkNav" href="/statustransaction">
+            Status Transaction
+          </Link>
+        </li>
       </ul>
     </nav>
   );

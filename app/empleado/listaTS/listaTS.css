@@ -160,8 +160,8 @@ img {
 /* Left and Right Panels */
 .left-panel,
 .right-panel {
-  width: 30%; /* Adjust width as needed */
-  background-color: #fcfafa;
+  width: 30%; /* Adjust width as needed  bg:#f7f8f9   fcfafa  */
+  background-color: #f7f8f9;
   padding: 20px;
   border-radius: 10px;
   display: flex;
