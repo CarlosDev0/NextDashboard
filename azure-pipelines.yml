@@ -26,4 +26,8 @@ stages:
         repository: 'carlosdev0/dashboard'
         command: 'buildAndPush'
         buildContext: '$(Build.SourcesDirectory)'
-        Dockerfile: '**/Dockerfile'
+        dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
+        tags: |
+          latest
+          $(Build.BuildId)
+
