@@ -14,7 +14,7 @@ RUN npm ci --no-audit --no-fund
 COPY . .
 
 # 5. Build the Next.js application
-RUN npm run build
+RUN npm run build && npm prune --production
 
 # 6. Use a lightweight Node.js image for the final container
 FROM node:22-alpine AS runner
@@ -23,8 +23,14 @@ FROM node:22-alpine AS runner
 WORKDIR /app
 COPY --from=builder /app ./
 
-# 8. Set environment variables
+#COPY --from=builder /app/.next/standalone ./
+#COPY --from=builder /app/public ./public
+#COPY --from=builder /app/.next/static ./.next/static
+#COPY --from=builder /app ./
+
+# 8. Set environment variables. Telemetry disabled
 ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
 
 # 9. Expose port 3000 (default for Next.js)
 EXPOSE 3000
