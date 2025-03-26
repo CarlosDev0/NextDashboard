@@ -25,4 +25,5 @@ stages:
         containerRegistry: 'DockerHubConnectionCarlosDev0'
         repository: 'carlosdev0/dashboard'
         command: 'buildAndPush'
+        buildContext: '$(Build.SourcesDirectory)'
         Dockerfile: '**/Dockerfile'
