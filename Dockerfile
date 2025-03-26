@@ -1,12 +1,14 @@
 # 1. Use an official Node.js image as base
-FROM node:18-alpine AS builder
+FROM node:22-alpine AS builder
 
 # 2. Set working directory in the container
 WORKDIR /app
 
 # 3. Copy package.json and install dependencies
 COPY package.json package-lock.json ./
-RUN npm install --frozen-lockfile
+RUN npm ci --no-audit --no-fund
+
+#RUN npm install --frozen-lockfile
 
 # 4. Copy the rest of the application
 COPY . .
@@ -15,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # 6. Use a lightweight Node.js image for the final container
-FROM node:18-alpine AS runner
+FROM node:22-alpine AS runner
 
 # 7. Set working directory and copy the built app
 WORKDIR /app
