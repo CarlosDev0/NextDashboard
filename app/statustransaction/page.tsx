@@ -52,11 +52,7 @@ export default function StatusTransaction() {
           </div>
         </aside>
       </div>
-      {/* <main className="main-container">
-        <header>
-          <p>test</p>
-        </header>
-      </main> */}
+
       <aside className="right-panel">
         <div>Summary of purchase:</div>
         <div>Email Notification:</div>

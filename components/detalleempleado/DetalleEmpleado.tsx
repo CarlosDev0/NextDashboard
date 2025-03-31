@@ -21,7 +21,10 @@ export default function DetalleEmpleado({ idEmpleado }: DetailEmployeeProp) {
     };
     fetchData();
   }, [idEmpleado]);
-
+  const formatDate = (dateString: string) => {
+    const date = new Date(dateString);
+    return new Intl.DateTimeFormat("en-GB").format(date); // "en-GB" outputs "dd/mm/yyyy"
+  };
   return (
     <div className="component-container">
       <center>
@@ -52,8 +55,8 @@ export default function DetalleEmpleado({ idEmpleado }: DetailEmployeeProp) {
                     {selectedOCList?.map((selectedOC) => (
                       <tr key={selectedOC?.idRegistro}>
                         <td>{selectedOC?.idRegistro}</td>
-                        <td>{selectedOC?.inicio.toString()}</td>
-                        <td>{selectedOC?.fin.toString()}</td>
+                        <td>{formatDate(selectedOC?.inicio.toString())}</td>
+                        <td>{formatDate(selectedOC?.fin.toString())}</td>
                       </tr>
                     ))}
                   </tbody>

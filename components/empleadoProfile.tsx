@@ -19,14 +19,6 @@ const EmpleadoProfile = ({
   }
   const [selectedOCList, setSelectedOC] = useState<DetailEmpleadoDto[]>([]);
 
-  // let forecasts = [];
-  // const obj = {
-  //   date: "1",
-  //   temperaturec: "200",
-  //   temperaturef: "300",
-  //   summary: "high",
-  // };
-  // forecasts.push(obj);
   useEffect(() => {
     if (selectedOCList) {
       const timer = setTimeout(() => {
