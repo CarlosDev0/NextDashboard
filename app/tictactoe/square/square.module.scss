@@ -1,0 +1,27 @@
+.squareButton {
+  background-color: white;
+  // color: red;
+  border-color: black;
+  border-radius: 1%;
+  border-width: 1px;
+  // padding: 14px 20px;
+  // margin: 8px 0;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.xl {
+  font-size: 18px;
+}
+
+.gridContainer {
+  display: grid;
+  /* 3 columns: 1fr= 1 fraction of the available space*/
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr); /* 3 rows */
+  // gap: 10px; /* space between buttons */
+  width: 300px; /* adjust as needed */
+  height: 300px; /* adjust as needed */
+  margin-left: 50px;
+  margin-top: 50px;
+}

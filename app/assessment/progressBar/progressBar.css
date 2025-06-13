@@ -1,0 +1,23 @@
+.progress-container {
+  width: 100%;
+  background-color: #e0e0e0; /* Light gray background */
+  border-radius: 5px; /* Rounded corners */
+  position: relative; /* Positioning for the text */
+  height: 30px; /* Height of the progress bar */
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #76c7c0; /* Color of the progress bar */
+  border-radius: 5px; /* Rounded corners */
+  transition: width 0.3s ease; /* Smooth transition for width change */
+}
+
+.progress-text {
+  position: absolute; /* Position text over the bar */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for centering */
+  color: #333; /* Text color */
+  font-weight: bold; /* Bold text */
+}

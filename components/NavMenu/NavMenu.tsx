@@ -42,12 +42,37 @@ const NavMenu = () => {
         </li>
         <li className="liNav">
           <Link className="linkNav" href="/contacto">
-            Contacto
+            Contact
           </Link>
         </li>
         <li className="liNav">
           <Link className="linkNav" href="/statustransaction">
             Status Transaction
+          </Link>
+        </li>
+        <li className="liNav">
+          <Link className="linkNav" href="/assessment">
+            Assessment
+          </Link>
+        </li>
+        <li className="liNav">
+          <Link className="linkNav" href="/email">
+            Email
+          </Link>
+        </li>
+        <li className="liNav">
+          <Link className="linkNav" href="/whatsapp">
+            WhatsApp
+          </Link>
+        </li>
+        <li className="liNav">
+          <Link className="linkNav" href="/tictactoe/square">
+            Tic-tac-toe
+          </Link>
+        </li>
+        <li className="liNav">
+          <Link className="linkNav" href="/tasks">
+            Tasks
           </Link>
         </li>
       </ul>

@@ -8,8 +8,6 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci --no-audit --no-fund
 
-#RUN npm install --frozen-lockfile
-
 # 4. Copy the rest of the application
 COPY . .
 
@@ -23,13 +21,8 @@ FROM node:22-alpine AS runner
 WORKDIR /app
 COPY --from=builder /app ./
 
-#COPY --from=builder /app/.next/standalone ./
-#COPY --from=builder /app/public ./public
-#COPY --from=builder /app/.next/static ./.next/static
-#COPY --from=builder /app ./
-
 # 8. Set environment variables. Telemetry disabled
-ENV NODE_ENV=production
+ENV NODE_ENV=development
 ENV NEXT_TELEMETRY_DISABLED=1
 
 # 9. Expose port 3000 (default for Next.js)

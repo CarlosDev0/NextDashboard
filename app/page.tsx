@@ -4,6 +4,8 @@ import Link from "next/link";
 import { lusitana } from "@/app/ui/fonts";
 import Image from "next/image";
 import "./ui/global.css";
+//import { Provider} from '@react-redux';
+import { store } from "./redux/counter/store";
 
 export default function Page() {
   return (

@@ -4,4 +4,7 @@ export const ListEndpoints = {
     ListEmpleados: "/Empleado/getEmpleados",
     GetDetailEmpleado: "/Empleado/getRegistrosOfEmployee",
   },
+  Assessment: {
+    GetQuestion: "/Assessment/getQuestion",
+  },
 };

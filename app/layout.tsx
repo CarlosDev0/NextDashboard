@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import NavMenu from "@/components/NavMenu/NavMenu";
 import FooterComponent from "@/components/footer/footer";
 import HeaderComponent from "@/components/header/header";
+import { ReduxProvider } from "./redux/counter/provider";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -22,7 +23,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <HeaderComponent />
         </header>
         <NavMenu />
-        <main>{children}</main>
+        <main>
+          <ReduxProvider>{children}</ReduxProvider>
+        </main>
         <footer>
           <FooterComponent />
         </footer>

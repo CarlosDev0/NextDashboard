@@ -1,10 +1,11 @@
-## Next.js App Router Course - Starter
+## Next Application
 
 deployed on: https://app.netlify.com/sites/startling-empanada-b120a8/deploys
+Backend: C# (other repo)
 
-This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
+React (Next) Application with integrations to whatsapp and AI
 
-For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
+How to run:
 
 npm run dev
 
