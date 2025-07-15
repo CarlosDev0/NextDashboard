@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ColorContext } from "../square/page";
+import { ColorContext } from "../square/ColorContext";
 
 function Son() {
   const { color } = useContext(ColorContext);

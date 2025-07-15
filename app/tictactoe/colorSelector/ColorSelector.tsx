@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ColorContext } from "../square/page";
+import { ColorContext } from "../square/ColorContext";
 
 function ColorSelector() {
   // 2. Access the `setColor` function from the context.

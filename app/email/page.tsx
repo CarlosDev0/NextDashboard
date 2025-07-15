@@ -2,16 +2,16 @@
 import React, { useState } from "react";
 import Arcade from "@arcadeai/arcadejs";
 
-const client = new Arcade({
-  apiKey: process.env.NEXT_PUBLIC_ARCADE_API_KEY,
-});
-
 const userId = "carlossan@gmail.com";
 
 export default function Email() {
   const [value, setValue] = useState<string>("");
 
   const handleClick = async () => {
+    const client = new Arcade({
+      apiKey: process.env.NEXT_PUBLIC_ARCADE_API_KEY,
+    });
+
     try {
       const authResponse = await client.tools.authorize({
         tool_name: "Google.ListEmails",
