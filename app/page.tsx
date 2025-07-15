@@ -80,6 +80,10 @@ export default function Page() {
           <li>Clean, responsive UI for desktop and mobile</li>
           <li>Backend API integration with real-time data fetching</li>
           <li>Sample full-stack architecture for demonstration purposes</li>
+          <li>
+            Changes are uploaded into GitHub Development branch and merged into
+            main branch{" "}
+          </li>
         </ul>
       </section>
     </main>
