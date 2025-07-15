@@ -9,65 +9,83 @@ import { store } from "./redux/counter/store";
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col p-6">
-      {/* <div>
-        <h1>Ejemplo de Nav Menu:</h1>
-        <NavMenu />
-      </div> */}
-      <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
-        <ul>
+    <main className="flex flex-col items-center justify-center px-4 py-10 text-center">
+      <h1 className="text-4xl font-bold mb-4">👋 Hello, I'm Carlos</h1>
+
+      <p className="text-lg max-w-2xl mb-6">
+        Welcome to my personal sample application. This project was built to
+        demonstrate my knowledge and skills as a full-stack developer using
+        modern web technologies. It’s intended as a live portfolio to accompany
+        my resume and provide potential employers with a practical showcase of
+        my work.
+      </p>
+
+      <section className="bg-white shadow-lg rounded-xl p-6 w-full max-w-3xl mb-6 text-left">
+        <h2 className="text-2xl font-semibold mb-2">🧠 About the Project</h2>
+        <ul className="list-disc pl-5 space-y-1">
           <li>
-            <Link href="/">Home</Link>
+            <strong>Frontend:</strong> Built with React and Next.js, deployed on{" "}
+            <a
+              href="https://vercel.com"
+              target="_blank"
+              className="text-blue-600 underline"
+            >
+              Vercel
+            </a>
+            .
           </li>
           <li>
-            <Link href="/buttons">Buttons</Link>
+            <strong>URL:</strong>{" "}
+            <a
+              href="https://nextdashboard-gules.vercel.app/"
+              target="_blank"
+              className="text-blue-600 underline"
+            >
+              https://nextdashboard-gules.vercel.app/
+            </a>
           </li>
           <li>
-            <Link href="/blog/post/hola-mundo">Post</Link>
+            <strong>Backend:</strong> Developed with ASP.NET Core (.NET), hosted
+            on{" "}
+            <a
+              href="https://render.com"
+              target="_blank"
+              className="text-blue-600 underline"
+            >
+              Render.com
+            </a>{" "}
+            using Docker.
           </li>
           <li>
-            <Link href="/empleado/listaTS">Lista Empleados</Link>
+            <strong>Backend URL:</strong>{" "}
+            <a
+              href="https://apiempleados-kt3g.onrender.com"
+              target="_blank"
+              className="text-blue-600 underline"
+            >
+              https://apiempleados-kt3g.onrender.com
+            </a>
+          </li>
+          <li>
+            <strong>Database:</strong> Hosted in Microsoft Azure.
           </li>
         </ul>
-      </div>
-      <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
-        <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
-          <div className="relative w-0 h-0 border-l-[15px] border-r-[15px] border-b-[26px] border-l-transparent border-r-transparent border-b-black" />
-          <p
-            className={`text-xl text-gray-800 md:text-3xl md:leading-normal ${lusitana.className} antialiased`}
-          >
-            <strong>Welcome to Acmes.</strong> This is the example for the{" "}
-            <a href="https://nextjs.org/learn/" className="text-blue-500">
-              Next.js Learn Course
-            </a>
-            , brought to you by Vercel.
-          </p>
-          <Link
-            href="/login"
-            className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
-          >
-            <span>Log in</span>
-            {/*<span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />*/}
-          </Link>
-        </div>
-        <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
-          {/* Add Hero Images Here */}
-          <Image
-            src="/hero-desktop.png"
-            width={1000}
-            height={760}
-            className="hidden md:block"
-            alt="Screenshots of the dashboard project showing desktop version"
-          />
-          <Image
-            src="/hero-mobile.png"
-            width={560}
-            height={620}
-            className="w-full block md:hidden"
-            alt="Screenshots of the dashboard project showing desktop version"
-          />
-        </div>
-      </div>
+      </section>
+
+      <section className="bg-white shadow-lg rounded-xl p-6 w-full max-w-3xl text-left">
+        <h2 className="text-2xl font-semibold mb-2">👨‍💻 Features</h2>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Employee list view with key information</li>
+          <li>Detailed view for each employee</li>
+          <li>Clean, responsive UI for desktop and mobile</li>
+          <li>Backend API integration with real-time data fetching</li>
+          <li>Sample full-stack architecture for demonstration purposes</li>
+          <li>
+            Changes are uploaded into GitHub Development branch and merged into
+            main branch{" "}
+          </li>
+        </ul>
+      </section>
     </main>
   );
 }
