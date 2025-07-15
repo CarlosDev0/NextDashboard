@@ -1,9 +1,10 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { empleadoTemplate } from "./componentsDto";
+import { empleadoTemplate } from "../componentsDto";
 import { getDetailEmpleado } from "@/app/api/get-detail-empleado";
 import { DetailEmpleadoDto } from "@/app/api/dto/detailEmpleadoDto";
+import "./employeeProfile.css";
 /*import FormField from "./form/FormField";*/
 /*import { Grid } from "semantic-ui-react";*/
 
@@ -36,19 +37,6 @@ const EmpleadoProfile = ({
     } catch (error) {
       return null;
     }
-
-    // const objSelected: IPurchaseOrder = {
-    //   createdDate: "99",
-    //   name: 8,
-    //   description: "j",
-    //   id: "71776428",
-    // };
-    // setSelectedOC(objSelected);
-
-    // if (currentDetail.idEmpleado) {
-    //   //if (cedula != objSelected.id) {
-    //   alert("No details available for current user");
-    // }
   }
 
   let id = empleado.cedula.slice(-1);

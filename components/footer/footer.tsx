@@ -8,8 +8,8 @@ const FooterComponent = () => {
       <a className="linkFooter" href="/">
         Home
       </a>
-      <a className="linkFooter" href="/contacto">
-        Contacto
+      <a className="linkFooter" href="/contact">
+        Contact
       </a>
       <div>
         <p> </p>

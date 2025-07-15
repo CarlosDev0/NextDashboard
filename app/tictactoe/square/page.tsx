@@ -23,8 +23,10 @@ export default function Board() {
           <h1 className="text-3xl font-bold text-center text-gray-800 mb-4">
             React Context Demo
           </h1>
-
-          {/* Grid Container */}
+          <div>
+            This module uses useState and useContext to change the color of the
+            UI.
+          </div>
           <div className="grid grid-cols-3 gap-3">
             <div className={styles.gridContainer}>
               {buttons.map((num) => (
