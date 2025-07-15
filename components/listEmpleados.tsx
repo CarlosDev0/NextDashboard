@@ -1,5 +1,5 @@
 import "./listEmpleados.css";
-import EmpleadoProfile from "./empleadoProfile";
+import EmpleadoProfile from "./employeeProfile/empleadoProfile";
 import { Empleado } from "@/app/utils/interfaces/interfaces";
 
 type ListEmpleadosProps = {

@@ -10,7 +10,9 @@ import { store } from "./redux/counter/store";
 export default function Page() {
   return (
     <main className="flex flex-col items-center justify-center px-4 py-10 text-center">
-      <h1 className="text-4xl font-bold mb-4">👋 Hello, I'm Carlos</h1>
+      <h1 className="text-4xl font-bold mb-4">
+        👋 Hello, I'm Carlos Alberto Sanchez
+      </h1>
 
       <p className="text-lg max-w-2xl mb-6">
         Welcome to my personal sample application. This project was built to
@@ -75,6 +77,7 @@ export default function Page() {
       <section className="bg-white shadow-lg rounded-xl p-6 w-full max-w-3xl text-left">
         <h2 className="text-2xl font-semibold mb-2">👨‍💻 Features</h2>
         <ul className="list-disc pl-5 space-y-1">
+          <li>The React application uses ReactRedux to handle states</li>
           <li>Employee list view with key information</li>
           <li>Detailed view for each employee</li>
           <li>Clean, responsive UI for desktop and mobile</li>

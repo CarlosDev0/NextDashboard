@@ -1,0 +1,35 @@
+.contact-container {
+  background-color: #2c394b;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container h2 {
+  text-align: center;
+  color: #fff338;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+}
+
+.contact-list li {
+  margin: 10px 0;
+}
+
+.contact-list a {
+  color: #fff338;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}

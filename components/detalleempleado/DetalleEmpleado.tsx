@@ -28,14 +28,12 @@ export default function DetalleEmpleado({ idEmpleado }: DetailEmployeeProp) {
   return (
     <div className="component-container">
       <center>
-        <h4 className="title-info">DETALLE EMPLEADO</h4>
+        <h4 className="title-info">DETAIL EMPLOYEE</h4>
       </center>
       <div className="detail"></div>
       <div className="wcCard">
         <div className="at-rw">
           <div className="content-main">
-            {/* <h4 className="at-font-h4 title-info">Estado del servicio</h4> */}
-
             <div
               hidden={!(selectedOCList.length > 0)} //hidden={!selectedOC || !(selectedOC?.idEmpleado == empleado.cedula)}
             >
@@ -66,8 +64,6 @@ export default function DetalleEmpleado({ idEmpleado }: DetailEmployeeProp) {
             <span></span>
             <div hidden={!(selectedOCList.length == 0)}>
               <SvgComponent />
-              {/* svg convertido a React component using: 
-                  https://react-svgr.com/playground/ */}
               <p>No records</p>
             </div>
             <div hidden={selectedOCList.length == 0}>

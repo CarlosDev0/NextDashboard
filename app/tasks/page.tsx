@@ -29,7 +29,6 @@ function reducer(state: State, action: Action): State {
       return { ...state };
     }
   }
-  // throw Error("Unknown action: " + action.type);
 }
 
 function Task() {
@@ -52,8 +51,11 @@ function Task() {
       <div className="mainTitle">
         <p>TASKS APPLICATION</p>
       </div>
+      <div>
+        This module uses useReducer and useRef to handle the state of every
+        task.
+      </div>
       <form onSubmit={handleSubmit}>
-        {/* <label htmlFor="taskInput"> Task: </label> */}
         <input
           id="taskInput"
           type="text"

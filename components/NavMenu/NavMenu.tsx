@@ -41,7 +41,7 @@ const NavMenu = () => {
           </Link>
         </li>
         <li className="liNav">
-          <Link className="linkNav" href="/contacto">
+          <Link className="linkNav" href="/contact">
             Contact
           </Link>
         </li>
