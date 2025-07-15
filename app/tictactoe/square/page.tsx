@@ -3,11 +3,7 @@ import React, { useState } from "react";
 import Son from "../help/Son";
 import styles from "./square.module.scss";
 import ColorSelector from "../colorSelector/ColorSelector";
-
-export const ColorContext = React.createContext({
-  color: "gray",
-  setColor: (string: string) => {}, //Default empty function
-});
+import { ColorContext } from "./ColorContext";
 
 export default function Board() {
   // Create an array of 9 elements for 3x3 grid

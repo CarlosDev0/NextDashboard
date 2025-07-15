@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Question } from "../utils/interfaces/interfaces";
 import GetQuestion from "../../app/assessment/getQuestion";
 import "./assessment.css";
-import ProgressBar from "./progressBar/page";
+import ProgressBar from "../../components/progressbar/page";
 import { RootState } from "../redux/counter/store";
 import { useDispatch, useSelector } from "react-redux";
 import { increment } from "../redux/counter/counter-slice";
