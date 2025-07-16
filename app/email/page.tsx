@@ -44,7 +44,18 @@ export default function Email() {
         user_id: userId,
       });
 
-      const output = emailsResponse.output?.value;
+      type Email = {
+        from?: string;
+        subject?: string;
+        date?: string;
+        [key: string]: any;
+      };
+
+      type ArcadeOutput = {
+        emails: Email[];
+      };
+
+      const output = emailsResponse.output?.value as ArcadeOutput;
       // setValue(
       //   typeof output === "string" ? output : JSON.stringify(output, null, 2)
       // );
