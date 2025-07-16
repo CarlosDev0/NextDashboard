@@ -4,7 +4,7 @@ const header = () => {
     <div className="mainHeader">
       <center>
         <img src={"/logo.png"} className="mr-3 h-6 sm:h-9" alt="logo" />
-        App Multiservicios
+        App Multiservices
       </center>
     </div>
   );
