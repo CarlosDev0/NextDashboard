@@ -11,7 +11,7 @@ import {
 } from "../../../schemas/EmpleadoSchema";
 
 import { createEmployee } from "../formerEmpleado/postServerActions";
-import "./newEmpleado.css";
+import "./newEmployee.css";
 
 export default function NewEmpleado() {
   const [loading, setLoading] = useState(false);
@@ -36,6 +36,16 @@ export default function NewEmpleado() {
     }
   }, [success]);
 
+  // Reset errors on new submit
+  useEffect(() => {
+    if (error) {
+      const timer = setTimeout(() => {
+        setError(undefined);
+      }, 4000);
+      return () => clearTimeout(timer);
+    }
+  }, [error]);
+
   const onSubmit: SubmitHandler<EmpleadoSchemaType> = (data) => {
     setLoading(true);
 
@@ -43,6 +53,7 @@ export default function NewEmpleado() {
       .then((result) => {
         setError(result.error);
         setSuccess(result.success);
+        if (result.success) reset();
       })
       .finally(() => setLoading(false));
   };
@@ -66,7 +77,7 @@ export default function NewEmpleado() {
           id="Cedula"
           disabled={loading}
           register={register}
-          placeholder="Cedula"
+          placeholder="Id"
           errors={errors}
           type="text"
         />
@@ -86,11 +97,14 @@ export default function NewEmpleado() {
           errors={errors}
           type="text"
         />
-        {!loading && error && <div className="errorMessage">{error}</div>}
-        {!loading && success && <div className="successMessage">{success}</div>}
+        {!loading && error && <div className="message error">{error}</div>}
+        {!loading && success && (
+          <div className="message success">{success}</div>
+        )}
         <button
           disabled={loading}
-          className="rounded-md hover:opacity-80 transition w-auto border-slate-300 flex items-center justify-center gap-2 py-3 px-5 border-2 bg-slate-700 text-white my-2"
+          className="submit-btn"
+          // className="rounded-md hover:opacity-80 transition w-auto border-slate-300 flex items-center justify-center gap-2 py-3 px-5 border-2 bg-slate-700 text-white my-2"
         >
           {loading ? "Submitting" : "Submit"}
         </button>

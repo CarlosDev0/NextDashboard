@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+* {
+  padding: 2px;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  /*box-sizing: border-box;*/
+}
+
+body {
+  background-color: #fefefe;
+  font-family: "Nunito", sans-serif;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  max-width: 500px;
+  margin: 20rem auto;
+}
+
+.form-title {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.form-subtitle {
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+
+.submit-btn {
+  margin-top: 1rem;
+  padding: 12px;
+  background-color: #334155;
+  border: 2px solid #94a3b8;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #475569;
+  opacity: 0.9;
+}
+
+.message {
+  font-size: 0.9rem;
+  padding: 8px;
+  margin-top: 1rem;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.successMessage {
+  background-color: #d1fae5;
+  color: #065f46;
+  border: 1px solid #10b981;
+}
+
+.errorMessage {
+  font-size: small;
+  color: red;
+}
+.message.error {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #ef4444;
+}

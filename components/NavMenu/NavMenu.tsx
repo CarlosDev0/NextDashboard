@@ -36,7 +36,7 @@ const NavMenu = () => {
           </Link>
         </li> */}
         <li className="liNav">
-          <Link className="linkNav" href="/empleado/newEmpleado">
+          <Link className="linkNav" href="/empleado/newEmployee">
             New Employee
           </Link>
         </li>
