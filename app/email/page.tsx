@@ -42,13 +42,9 @@ export default function Email() {
       const emailsResponse = await client.tools.execute({
         tool_name: "Google.ListEmails",
         user_id: userId,
-        params: {
-          include_body: false, // if supported
-        },
       });
 
       const output = emailsResponse.output?.value;
-      console.log("return from arcade: ", output);
       // setValue(
       //   typeof output === "string" ? output : JSON.stringify(output, null, 2)
       // );
@@ -73,8 +69,10 @@ export default function Email() {
 
   return (
     <div>
-      This module has a integration with a gmail OAuth using Arcade Api. It
-      brings an array of email headers that are shown in the UI.
+      <div>
+        This module has a integration with a gmail OAuth using Arcade Api. It
+        brings an array of email headers that are shown in the UI.
+      </div>
       <button
         onClick={handleClick}
         className="px-4 py-2 bg-blue-600 text-white rounded"
