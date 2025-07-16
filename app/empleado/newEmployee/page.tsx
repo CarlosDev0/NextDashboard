@@ -60,6 +60,9 @@ export default function NewEmpleado() {
   return (
     <Container>
       <h1>CREATE A NEW EMPLOYEE (WITH FETCH):</h1>
+      <h3>
+        This is an example of a form that uses Fetch to create a new record.
+      </h3>
       <h3>Please fill out every field:</h3>
       <form
         onSubmit={handleSubmit(onSubmit)}

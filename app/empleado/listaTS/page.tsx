@@ -63,7 +63,15 @@ export default function GetLista() {
   return (
     <div className="page-layout">
       <aside className="left-panel">
-        <h3>Left Panel</h3>
+        <h3>Description</h3>
+        <h4>
+          This module hit the API (developed using .NET) to get the employee
+          list.
+        </h4>
+        <h4>The API has an authentication using Jason web Token.</h4>
+        <h4>
+          When the user click on Detail, a new request is sent to the API.
+        </h4>
       </aside>
 
       <main className="main-container">
