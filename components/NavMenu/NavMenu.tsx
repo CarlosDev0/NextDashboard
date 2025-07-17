@@ -50,11 +50,11 @@ const NavMenu = () => {
             Status Transaction
           </Link>
         </li>
-        {/* <li className="liNav">
+        <li className="liNav">
           <Link className="linkNav" href="/assessment">
             Assessment
           </Link>
-        </li> */}
+        </li>
         <li className="liNav">
           <Link className="linkNav" href="/email">
             Email

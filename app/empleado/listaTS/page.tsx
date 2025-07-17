@@ -72,6 +72,11 @@ export default function GetLista() {
         <h4>
           When the user click on Detail, a new request is sent to the API.
         </h4>
+        <h4>
+          The API uses the ORM Entity Framework to handle the communication and
+          the operations with the database engine.
+        </h4>
+        <h4>It uses a Sql Server Database.</h4>
       </aside>
 
       <main className="main-container">
