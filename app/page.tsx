@@ -81,8 +81,10 @@ export default function Page() {
           <li>Employee list view with key information</li>
           <li>Detailed view for each employee</li>
           <li>Clean, responsive UI for desktop and mobile</li>
-          <li>Backend API integration with real-time data fetching</li>
+          <li>Backend API (C#) integration with real-time data fetching</li>
           <li>Sample full-stack architecture for demonstration purposes</li>
+          <li>Tic-Tac shows the use of useContext</li>
+          <li>Tasks shows the use of useRef, useEffect, useReducer and custom Hook to store in Local Storage</li>
           <li>
             Changes are uploaded into GitHub Development branch and merged into
             main branch{" "}
