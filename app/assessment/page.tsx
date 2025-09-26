@@ -60,7 +60,11 @@ export default function Assessment() {
   return (
     <div>
       <center>
-        <div>The backend uses a MongoDB database to store the information.</div>
+        <h3>
+          In this module the backend uses a MongoDB database to store the
+          questions and the right answers.
+        </h3>
+        <h3>Choose an answer and click Next.</h3>
         {!conclusion ? (
           <main className="main-container">
             <div className="question">

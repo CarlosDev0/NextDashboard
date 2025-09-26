@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useReducer, useRef } from "react";
+import React, { useEffect, useReducer, useRef } from "react";
 import "./style.scss";
+import useLocalStorage from "./useLocalStorage";
 
 type State = {
   tasks: string[];
@@ -34,6 +35,7 @@ function reducer(state: State, action: Action): State {
 function Task() {
   const [state, dispatch] = useReducer(reducer, { tasks: [] });
   const textTask = useRef<HTMLInputElement>(null);
+  const [tasks, setTasks] = useLocalStorage('tasks',[]);   //Custom hook to store in localStorage
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
@@ -45,6 +47,20 @@ function Task() {
       textTask.current.value = "";
     }
   };
+  //Initial charge of tasks:
+  useEffect(()=>{
+    tasks.map((task:string)=>{
+      dispatch({
+      type: "addTask",
+      task: task,
+      });
+    });
+  },[]);
+
+  //Update tasks into localStorage when task list change:
+  useEffect(()=>{
+    setTasks(state.tasks);
+  },[state]);
 
   return (
     <div className="task-container">
@@ -52,8 +68,11 @@ function Task() {
         <p>TASKS APPLICATION</p>
       </div>
       <div>
-        This module uses useReducer and useRef to handle the state of every
-        task.
+        <p>This module uses useReducer and useRef to handle the state of every
+        task.</p>
+        <p>The list is cached in the LocalStorage of your browser. When you refresh this page, the stored values 
+          are not lost.
+        </p>
       </div>
       <form onSubmit={handleSubmit}>
         <input
@@ -84,5 +103,4 @@ function Task() {
     </div>
   );
 }
-
 export default Task;
