@@ -26,9 +26,9 @@ export default function Page() {
         <h2 className="text-2xl font-semibold mb-2">🧠 About the Project</h2>
         <ul className="list-disc pl-5 space-y-1">
           <li>
-            <strong>Frontend:</strong> Built with React and Next.js, deployed on{" "}
+            <strong>Frontend:</strong> Built with React and Next.js, deployed also on{" "}
             <a
-              href="https://vercel.com"
+              href="https://nextdashboard-gules.vercel.app/"
               target="_blank"
               className="text-blue-600 underline"
             >
@@ -37,36 +37,16 @@ export default function Page() {
             .
           </li>
           <li>
-            <strong>URL:</strong>{" "}
-            <a
-              href="https://nextdashboard-gules.vercel.app/"
-              target="_blank"
-              className="text-blue-600 underline"
-            >
-              https://nextdashboard-gules.vercel.app/
-            </a>
-          </li>
-          <li>
             <strong>Backend:</strong> Developed with ASP.NET Core (.NET), hosted
-            on{" "}
+            on render.com: {" "}
             <a
-              href="https://render.com"
+              href="https://apiempleados-kt3g.onrender.com"
               target="_blank"
               className="text-blue-600 underline"
             >
               Render.com
             </a>{" "}
             using Docker.
-          </li>
-          <li>
-            <strong>Backend URL:</strong>{" "}
-            <a
-              href="https://apiempleados-kt3g.onrender.com"
-              target="_blank"
-              className="text-blue-600 underline"
-            >
-              https://apiempleados-kt3g.onrender.com
-            </a>
           </li>
           <li>
             <strong>Database:</strong> Hosted in Microsoft Azure.
@@ -83,8 +63,8 @@ export default function Page() {
           <li>Clean, responsive UI for desktop and mobile</li>
           <li>Backend API (C#) integration with real-time data fetching</li>
           <li>Sample full-stack architecture for demonstration purposes</li>
-          <li>Tic-Tac shows the use of useContext</li>
-          <li>Tasks shows the use of useRef, useEffect, useReducer and custom Hook to store in Local Storage</li>
+          <li>Tic-Tac module shows the use of useContext</li>
+          <li>Tasks module shows the use of useRef, useEffect, useReducer and custom Hook to store in Local Storage</li>
           <li>
             Changes are uploaded into GitHub Development branch and merged into
             main branch{" "}

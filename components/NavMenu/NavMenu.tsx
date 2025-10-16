@@ -24,6 +24,11 @@ const NavMenu = () => {
           </Link>
         </li>
         <li className="liNav">
+          <Link className="linkNav" href="/portfolio">
+            My Portfolio
+          </Link>
+        </li>
+        <li className="liNav">
           {/* <Link href="/empleado/lista/getlista">Employee List</Link> */}
           {/* <Link href="/app/listaTS/getLista">Employee List</Link> */}
           <Link className="linkNav" href="/empleado/listaTS">
