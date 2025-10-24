@@ -6,6 +6,7 @@ import Image from "next/image";
 import "./ui/global.css";
 //import { Provider} from '@react-redux';
 import { store } from "./redux/counter/store";
+import Bot from "./bot/bot";
 
 export default function Page() {
   return (
@@ -15,7 +16,7 @@ export default function Page() {
       </h1>
 
       <p className="text-lg max-w-2xl mb-6">
-        Welcome to my personal sample application. This project was built to
+        Welcome to my personal sample application. This project was built by myself to
         demonstrate my knowledge and skills as a full-stack developer using
         modern web technologies. It’s intended as a live portfolio to accompany
         my resume and provide potential employers with a practical showcase of
@@ -69,7 +70,14 @@ export default function Page() {
             Changes are uploaded into GitHub Development branch and merged into
             main branch{" "}
           </li>
+          <li>Automatic deployment from github to both services vercel and netlify</li>
         </ul>
+      </section>
+      <section>
+        <h2 className="text-2xl font-semibold mb-2">🚀 Ask questions to my Bot:</h2>
+        <div className="text-lg mb-4">
+          <Bot/>
+          </div>
       </section>
     </main>
   );
