@@ -28,6 +28,16 @@ export default function Contact() {
             github.com/CarlosDev0
           </a>
         </li>
+        <li>
+          <strong>LinkedIn:</strong>{" "}
+          <a
+            href="https://www.linkedin.com/in/carlos-alberto-sanchez-397ab260/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            www.linkedin.com/in/carlos-alberto-sanchez-397ab260/ 
+          </a>
+        </li>
       </ul>
     </div>
   );
