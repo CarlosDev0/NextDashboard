@@ -3,21 +3,24 @@
 import React, { useEffect, useReducer, useRef } from "react";
 import "./style.scss";
 import useLocalStorage from "./useLocalStorage";
+import {Stage} from "./taskTypes";
 
 type State = {
-  tasks: string[];
+  tasks: Stage[];
 };
 
+
 type Action =
-  | { type: "addTask"; task: string }
-  | { type: "deleteTask"; index: number };
+  | { type: "addTask"; task: Stage }
+  | { type: "deleteTask"; index: number }
+  | { type: "completedTask"; index: number };
 
 function reducer(state: State, action: Action): State {
   switch (action.type) {
     case "addTask": {
       return {
         ...state,
-        tasks: [...state.tasks, action.task || ""],
+        tasks: [...state.tasks, { text: action.task.text || "", state: action.task.state || false } as Stage],
       };
     }
     case "deleteTask": {
@@ -25,6 +28,13 @@ function reducer(state: State, action: Action): State {
         ...state,
         tasks: state.tasks.filter((_, i) => i !== action.index),
       };
+    }
+    case "completedTask":{
+      return {
+        ...state,
+        tasks: state.tasks.map((task,i)=>
+        i ===action.index ? {...task, state: !task.state}: task)
+      }
     }
     default: {
       return { ...state };
@@ -42,14 +52,14 @@ function Task() {
     if (textTask.current && textTask.current.value) {
       dispatch({
         type: "addTask",
-        task: textTask.current.value,
+        task: {text: textTask.current.value, state: false},
       });
       textTask.current.value = "";
     }
   };
   //Initial charge of tasks:
   useEffect(()=>{
-    tasks.map((task:string)=>{
+    tasks.map((task:Stage)=>{
       dispatch({
       type: "addTask",
       task: task,
@@ -88,15 +98,27 @@ function Task() {
       <label className="labelTitle">Task List:</label>
       <div className="task-list">
         {state.tasks &&
-          state.tasks.map((task: string, index) => (
+          state.tasks.map((task: Stage, index) => (
             <div className="task-item" key={index}>
-              <p className="task-text">{task}</p>
-              <button
-                className="delete-button"
-                onClick={() => dispatch({ type: "deleteTask", index })}
-              >
-                Delete{" "}
-              </button>
+              <p> {task.state?(<span style={{textDecoration:'line-through'}}>
+        {task.text} </span>
+
+       ):<span>{task.text}</span>}
+              {/* <p className="task-text">{task.text} */}
+              </p>
+              <div className="task-buttons">
+                <button
+                  className="delete-button"
+                  onClick={() => dispatch({ type: "deleteTask", index:index })}
+                >Delete{" "}</button>
+                 <button
+                    className={`complete-button ${task.state ? "completed" : ""}`}
+                    disabled={task.state}
+                    onClick={() => dispatch({ type: "completedTask", index })}
+                  >
+                    {task.state ? "Done" : "Complete"}
+                  </button>
+              </div>
             </div>
           ))}
       </div>

@@ -1,6 +1,7 @@
 import {useState} from "react";
+import { Stage } from "./taskTypes";
 
-function useLocalStorage(key: string, initialTask: string[]){
+function useLocalStorage(key: string, initialTask: Stage[]){
     //Check localstorage at mount: Lazy initializer:
     const [tasks, setStoredValue] = useState(()=>{
         try
@@ -12,7 +13,7 @@ function useLocalStorage(key: string, initialTask: string[]){
         }
     });
     
-    const setTasks=(newTasks:string[]) =>{
+    const setTasks=(newTasks:Stage[]) =>{
         localStorage.setItem(key, JSON.stringify(newTasks));
         setStoredValue(newTasks);
     }
