@@ -132,8 +132,10 @@ input[type="submit"]:hover {
 
 .task-buttons {
   display: flex;
+  justify-content: flex-end;  /* aligns buttons to the right */
+  align-items: center;
   gap: 0.5rem;
-  margin-left: auto;
+  margin-left: auto;          /* pushes the buttons section to the right */
 }
 
 button {
@@ -172,4 +174,11 @@ button:hover {
   background-color: #999;
   text-decoration: line-through;
   cursor: default;
+}
+
+/* Make both buttons same width */
+.task-buttons button {
+  min-width: 100px;           /* consistent width for both */
+  text-align: center;
+  flex-shrink: 0;             /* prevents shrinking if text is longer */
 }

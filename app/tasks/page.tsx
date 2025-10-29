@@ -112,8 +112,7 @@ function Task() {
                   onClick={() => dispatch({ type: "deleteTask", index:index })}
                 >Delete{" "}</button>
                  <button
-                    className={`complete-button ${task.state ? "completed" : ""}`}
-                    disabled={task.state}
+                    className={`complete-button ${task.state ? "completed" : ""}`}                    
                     onClick={() => dispatch({ type: "completedTask", index })}
                   >
                     {task.state ? "Done" : "Complete"}
