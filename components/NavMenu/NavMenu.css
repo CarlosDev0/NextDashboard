@@ -18,8 +18,10 @@ nav {
 }
 
 .liNav {
-  display: inline !important;
+  display: inline-block !important;
   margin-right: 20px !important;
+  padding: 5px 0;
+  vertical-align: top;
 }
 
 .linkNav {
@@ -29,4 +31,20 @@ nav {
 
 a:hover {
   color: #eee;
+}
+
+.skill-label span {
+    color: #ffd700; /* Gold color to make it pop */
+    font-weight: bold;
+    margin-right: 5px; /* Spacing before the first skill link */
+    padding-right: 5px;
+}
+
+.separator {
+  /* Use a simpler height as links are now single line again */
+  height: 1.5em; 
+  border-left: 1px solid white; 
+  margin: 0 15px;
+  vertical-align: middle;
+  opacity: 0.7;
 }

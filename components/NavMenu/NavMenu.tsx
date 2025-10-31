@@ -14,10 +14,8 @@ const NavMenu = () => {
           setMenuOpen(!menuOpen);
         }}
       ></div>
-      {/* <ul> */}
       <ul className={"pen"}>
-        {/* <ul className={menuOpen ? "pen" : ""}> */}
-        {/* </ul> */}
+        {/* === Career Links (Contact, My Portfolio, CV/Resume) === */}
         <li className="liNav">
           <Link className="linkNav" href="/">
             Home
@@ -29,25 +27,32 @@ const NavMenu = () => {
           </Link>
         </li>
         <li className="liNav">
+          <Link className="linkNav" href="/contact">
+            Contact
+          </Link>
+        </li>
+        <li className="liNav">
+          <Link className="linkNav career-link" href="/CV_5-Carlos_Sanchez.pdf" target="_blank"
+          rel="noopener noreferrer" download>
+            Download CV
+          </Link>
+        </li>
+        {/* === SEPARATOR to split the two sections === */}
+        <li className="liNav separator"></li>
+        {/* === SKILL SECTION LABEL === */}
+        <li className="liNav skill-label">
+          <span>Skill Examples:</span>
+        </li>
+        <li className="liNav">
           {/* <Link href="/empleado/lista/getlista">Employee List</Link> */}
           {/* <Link href="/app/listaTS/getLista">Employee List</Link> */}
           <Link className="linkNav" href="/empleado/listaTS">
             Employee List
           </Link>
         </li>
-        {/* <li className="liNav">
-          <Link className="linkNav" href="/buttons">
-            Buttons
-          </Link>
-        </li> */}
         <li className="liNav">
           <Link className="linkNav" href="/empleado/newEmployee">
             New Employee
-          </Link>
-        </li>
-        <li className="liNav">
-          <Link className="linkNav" href="/contact">
-            Contact
           </Link>
         </li>
         <li className="liNav">
@@ -80,6 +85,11 @@ const NavMenu = () => {
             Tasks
           </Link>
         </li>
+        {/* <li className="liNav">
+          <Link className="linkNav" href="/optimization">
+            Optimization
+          </Link>
+        </li> */}
       </ul>
     </nav>
   );
