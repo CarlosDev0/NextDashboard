@@ -44,15 +44,8 @@ const NavMenu = () => {
           <span>Skill Examples:</span>
         </li>
         <li className="liNav">
-          {/* <Link href="/empleado/lista/getlista">Employee List</Link> */}
-          {/* <Link href="/app/listaTS/getLista">Employee List</Link> */}
-          <Link className="linkNav" href="/empleado/listaTS">
-            Employee List
-          </Link>
-        </li>
-        <li className="liNav">
-          <Link className="linkNav" href="/empleado/newEmployee">
-            New Employee
+          <Link className="linkNav" href="/tasks">
+            Tasks
           </Link>
         </li>
         <li className="liNav">
@@ -81,8 +74,13 @@ const NavMenu = () => {
           </Link>
         </li>
         <li className="liNav">
-          <Link className="linkNav" href="/tasks">
-            Tasks
+          <Link className="linkNav" href="/empleado/listaTS">
+            Employee List
+          </Link>
+        </li>
+        <li className="liNav">
+          <Link className="linkNav" href="/empleado/newEmployee">
+            New Employee
           </Link>
         </li>
         {/* <li className="liNav">
