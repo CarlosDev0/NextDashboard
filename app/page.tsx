@@ -1,14 +1,22 @@
+'use client'
 import AcmeLogo from "@/app/ui/acme-logo";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { lusitana } from "@/app/ui/fonts";
 import Image from "next/image";
 import "./ui/global.css";
-//import { Provider} from '@react-redux';
 import { store } from "./redux/counter/store";
 import Bot from "./bot/bot";
+import { useEffect } from "react";
+import { aiAgentWakeUpService } from "./bot/aiAgentWakeUpService";
+import  GetQuestion  from "./assessment/getQuestion";
+
 
 export default function Page() {
+  useEffect(() => {
+     aiAgentWakeUpService();
+     GetQuestion(0);
+  },[]);
   return (
     <main className="flex flex-col items-center justify-center px-4 py-10 text-center">
       <h1 className="text-4xl font-bold mb-4">
@@ -74,7 +82,7 @@ export default function Page() {
         </ul>
       </section>
       <section>
-        <h2 className="text-2xl font-semibold mb-2">🚀 Ask questions to my Bot:</h2>
+        <h2 className="text-2xl font-semibold mb-2">🚀 Ask questions about my experience to my Bot:</h2>
         <div className="text-lg mb-4">
           <Bot/>
           </div>
@@ -82,3 +90,4 @@ export default function Page() {
     </main>
   );
 }
+
