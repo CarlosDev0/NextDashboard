@@ -16,16 +16,22 @@ export default function Assessment() {
   const [conclusion, setConclusion] = useState(false);
   const [quantityCorrectAnswers, setQCorrectAns] = useState(0);
   const [currentAnswerReceived, setReceived] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const questionId = useSelector((state: RootState) => state.counter.value);
   const dispatch = useDispatch();
 
   useEffect(() => {
     const fetchData = async () => {
+      setLoading(true);
+      try{
       const historicQuestions = [...questions];
       const newQuestion = await GetQuestion(questionId);
       historicQuestions[questionId] = newQuestion[0];
       setQuestion(historicQuestions);
+      } finally {
+        setLoading(false);
+      }
     };
     fetchData();
   }, [questionId]);
@@ -65,6 +71,9 @@ export default function Assessment() {
           questions and the right answers.
         </h3>
         <h3>Choose an answer and click Next.</h3>
+        {loading && (
+          <div className="loading-spinner" title="Loading next question..."></div>
+        )}
         {!conclusion ? (
           <main className="main-container">
             <div className="question">
