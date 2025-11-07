@@ -16,18 +16,39 @@ const getQuestion = async (questionId: number): Promise<Question[]> => {
     } as HeadersInit,
   };
 
-  let { response, data } = await originalRequest<Question[]>(url, config);
+  let { response, data } = await retryRequest<Question[]>(url, config, 3, 3000);
 
   return data;
 };
 
-const originalRequest = async <T>(
+const retryRequest = async <T>(
   url: string,
-  config: RequestInit
+  config: RequestInit,
+  retries: number,
+  delayN: number
 ): Promise<ApiResponse<T>> => {
-  const response = await fetch(url, config);
-  const data: T = await response.json();
-  return { response, data };
+  let lastError: unknown;
+  for(let attempt = 1; attempt <= retries; attempt++) {
+    console.log(`Attempt ${attempt}...`);
+    try{
+      const response   = await fetch(url, config);
+      if(!response.ok){
+        throw new Error(`HTTP error: ${response.status}`);
+      }
+      const data: T = await response.json();
+      return { response, data };
+    } catch (error) {
+      lastError = error;
+      console.warn(`Attempt ${attempt} failed: ${error}`);
+      if (attempt < retries) {
+        await delay(delayN);
+      }
+    }
+  }
+  throw new Error( `Request failed after ${retries} attempts: ${(lastError as Error).message}`);
 };
+
+const delay = (ms: number) =>
+  new Promise((resolve) => setTimeout(resolve, ms));
 
 export default getQuestion;
