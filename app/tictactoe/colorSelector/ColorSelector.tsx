@@ -4,12 +4,12 @@ import { ColorContext } from "../square/ColorContext";
 function ColorSelector() {
   // 2. Access the `setColor` function from the context.
   const { setColor } = useContext(ColorContext);
-  const colors = ["#3b82f6", "#22c55e", "#ef4444", "#f97316", "#8b5cf6"];
+  const colors = ["#3b82f6", "#008b8b", "#ef4444", "#f97316", "#8b5cf6"];
 
   return (
     <div className="mt-6 p-4 bg-gray-100 rounded-lg shadow-inner">
       <h3 className="text-lg font-semibold text-gray-700 text-center mb-3">
-        Change Context Color
+        Please Change Context Color:
       </h3>
       <div className="flex justify-center gap-3">
         {colors.map((c) => (

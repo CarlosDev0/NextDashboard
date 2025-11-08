@@ -1,13 +1,16 @@
 "use client";
 import Link from "next/dist/client/link";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./NavMenu.css";
+import { ColorContext } from "@/app/tictactoe/square/ColorContext";
 
 //export default function NewEmpleado() {
 const NavMenu = () => {
+  const { color } = useContext(ColorContext);
   const [menuOpen, setMenuOpen] = useState(false);
+  console.log("NavMenu Color:", {color});
   return (
-    <nav>
+    <nav style={{ backgroundColor: color }}>
       <div
         className="menu"
         onClick={() => {

@@ -10,7 +10,7 @@ body {
 nav {
   padding: 10px !important;
   margin-bottom: 10px !important;
-  background: darkcyan !important;
+  /* background: darkcyan !important; */
 }
 
 .pen {
