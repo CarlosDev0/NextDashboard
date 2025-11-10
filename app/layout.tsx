@@ -6,6 +6,7 @@ import NavMenu from "@/components/NavMenu/NavMenu";
 import FooterComponent from "@/components/footer/footer";
 import HeaderComponent from "@/components/header/header";
 import { ReduxProvider } from "./redux/counter/provider";
+import ColorProvider from "./tictactoe/colorSelector/ColorProvider";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -19,6 +20,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
+        <ColorProvider>
         <header>
           <HeaderComponent />
         </header>
@@ -29,6 +31,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <footer>
           <FooterComponent />
         </footer>
+        </ColorProvider>
       </body>
     </html>
   );

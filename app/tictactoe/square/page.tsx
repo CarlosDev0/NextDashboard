@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import Son from "../help/Son";
 import styles from "./square.module.scss";
 import ColorSelector from "../colorSelector/ColorSelector";
@@ -12,12 +12,11 @@ export default function Board() {
   //i + 1 turns the indices into numbers from 1 to 9.
   //This is the Array: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-  const [color, setColor] = useState("#3b82f6");
+  const { color } = useContext(ColorContext);
   const buttons = Array.from({ length: 9 }, (_, i) => i + 1);
   return (
     //Context.Provider component must have a value prop.
     //by passing the object {color, setColor} we allow child components to read and update
-    <ColorContext.Provider value={{ color, setColor }}>
       <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4 font-sans">
         <div className="w-full max-w-md mx-auto bg-white rounded-xl shadow-lg p-6">
           <h1 className="text-3xl font-bold text-center text-gray-800 mb-4">
@@ -47,6 +46,6 @@ export default function Board() {
           </div>
         </div>
       </div>
-    </ColorContext.Provider>
+    // </ColorContext.Provider>
   );
 }
