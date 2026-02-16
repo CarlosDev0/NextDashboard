@@ -35,7 +35,7 @@ const NavMenu = () => {
           </Link>
         </li>
         <li className="liNav">
-          <Link className="linkNav career-link" href="/CV_5-Carlos_Sanchez.pdf" target="_blank"
+          <Link className="linkNav career-link" href="/CV_7-Carlos_Sanchez.pdf" target="_blank"
             rel="noopener noreferrer" download>
             Download CV
           </Link>
