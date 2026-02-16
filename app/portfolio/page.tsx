@@ -21,7 +21,7 @@ export default function Portfolio() {
           <div className="stack-section">
             <h3>Front End</h3>
             <ul>
-              <li>React</li>
+              <li>React, Angular</li>
               <li>HTML, CSS, Vanilla JavaScript</li>
               <li>jQuery, Kendo Libraries, Angular</li>
             </ul>
