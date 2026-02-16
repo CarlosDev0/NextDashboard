@@ -9,14 +9,14 @@ import { store } from "./redux/counter/store";
 import Bot from "./bot/bot";
 import { useEffect } from "react";
 import { aiAgentWakeUpService } from "./bot/aiAgentWakeUpService";
-import  GetQuestion  from "./assessment/getQuestion";
+//import GetQuestion from "./assessment/getQuestion";
 
 
 export default function Page() {
   useEffect(() => {
-     aiAgentWakeUpService();
-     GetQuestion(0);
-  },[]);
+    aiAgentWakeUpService();
+    // GetQuestion(0);
+  }, []);
   return (
     <main className="flex flex-col items-center justify-center px-4 py-10 text-center">
       <h1 className="text-4xl font-bold mb-4">
@@ -78,14 +78,15 @@ export default function Page() {
             Changes are uploaded into GitHub Development branch and merged into
             main branch{" "}
           </li>
-          <li>Automatic deployment from github to both services vercel and netlify</li>
+          <li>Automatic deployment from github to both services vercel and netlify (CI/CD)</li>
         </ul>
       </section>
       <section>
         <h2 className="text-2xl font-semibold mb-2">🚀 Ask questions about my experience to my Bot:</h2>
+        <h3> Be patient! First request could take a couple of minutes.</h3>
         <div className="text-lg mb-4">
-          <Bot/>
-          </div>
+          <Bot />
+        </div>
       </section>
     </main>
   );

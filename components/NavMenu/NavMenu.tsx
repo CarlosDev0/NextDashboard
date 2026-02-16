@@ -8,7 +8,7 @@ import { ColorContext } from "@/app/tictactoe/square/ColorContext";
 const NavMenu = () => {
   const { color } = useContext(ColorContext);
   const [menuOpen, setMenuOpen] = useState(false);
-  console.log("NavMenu Color:", {color});
+  console.log("NavMenu Color:", { color });
   return (
     <nav style={{ backgroundColor: color }}>
       <div
@@ -36,7 +36,7 @@ const NavMenu = () => {
         </li>
         <li className="liNav">
           <Link className="linkNav career-link" href="/CV_5-Carlos_Sanchez.pdf" target="_blank"
-          rel="noopener noreferrer" download>
+            rel="noopener noreferrer" download>
             Download CV
           </Link>
         </li>
@@ -81,11 +81,11 @@ const NavMenu = () => {
             Employee List
           </Link>
         </li>
-        <li className="liNav">
+        {/* <li className="liNav">
           <Link className="linkNav" href="/empleado/newEmployee">
             New Employee
           </Link>
-        </li>
+        </li> */}
         {/* <li className="liNav">
           <Link className="linkNav" href="/optimization">
             Optimization
