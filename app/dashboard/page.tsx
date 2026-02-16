@@ -7,10 +7,16 @@ export const dynamic = "force-dynamic"; // 🔥 Prevents pre-rendering
 
 export default async function Page() {
   if (process.env.NODE_ENV != "production") {
-    return NextResponse.json(
-      { error: "Seeding is disabled in production" },
-      { status: 403 }
+    return (
+      <div className="error">
+        <h1>Error</h1>
+        <p>Something went wrong</p>
+      </div>
     );
+    // return NextResponse.json(
+    //   { error: "Seeding is disabled in production" },
+    //   { status: 403 }
+    // );
   }
   const revenue = await fetchRevenue();
   return (
