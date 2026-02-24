@@ -7,6 +7,7 @@ import FooterComponent from "@/components/footer/footer";
 import HeaderComponent from "@/components/header/header";
 import { ReduxProvider } from "./redux/counter/provider";
 import ColorProvider from "./tictactoe/colorSelector/ColorProvider";
+import AuthProvider from "./auth-provider";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -15,12 +16,13 @@ export const metadata: Metadata = {
   description: "MultiAplication appointments and utilities",
   icons: { icon: "/logo.png" },
 };
-//“children” represent the react pages (app/page.tsx).
+//"children" represent the react pages (app/page.tsx).
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
         <ColorProvider>
+        <AuthProvider>
         <header>
           <HeaderComponent />
         </header>
@@ -31,6 +33,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <footer>
           <FooterComponent />
         </footer>
+        </AuthProvider>
         </ColorProvider>
       </body>
     </html>

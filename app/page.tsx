@@ -19,6 +19,15 @@ export default function Page() {
   }, []);
   return (
     <main className="flex flex-col items-center justify-center px-4 py-10 text-center">
+      <div className="mb-6">
+        <Link
+          href="/login"
+          className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors inline-block"
+        >
+          Login with Google
+        </Link>
+      </div>
+      
       <h1 className="text-4xl font-bold mb-4">
         👋 Hello, I'm Carlos Alberto Sanchez
       </h1>
@@ -26,7 +35,7 @@ export default function Page() {
       <p className="text-lg max-w-2xl mb-6">
         Welcome to my personal sample application. This project was built by myself to
         demonstrate my knowledge and skills as a full-stack developer using
-        modern web technologies. It’s intended as a live portfolio to accompany
+        modern web technologies. It's intended as a live portfolio to accompany
         my resume and provide potential employers with a practical showcase of
         my work.
       </p>
@@ -91,4 +100,3 @@ export default function Page() {
     </main>
   );
 }
-
