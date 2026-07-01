@@ -1,7 +1,8 @@
 'use client'
 import AcmeLogo from "@/app/ui/acme-logo";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
+import { signIn } from 'next-auth/react';
+import { Button } from "@/app/ui/button";
 import { lusitana } from "@/app/ui/fonts";
 import Image from "next/image";
 import "./ui/global.css";
@@ -17,8 +18,20 @@ export default function Page() {
     aiAgentWakeUpService();
     // GetQuestion(0);
   }, []);
+
+  const handleLogin = () => {
+    // redirect the user to Google OAuth and then to the welcome page
+    signIn('google', { callbackUrl: '/welcome' });
+  };
+
   return (
     <main className="flex flex-col items-center justify-center px-4 py-10 text-center">
+      <div className="mb-6">
+        <Button onClick={handleLogin} className="px-6 py-2">
+          Login with Google
+        </Button>
+      </div>
+      
       <h1 className="text-4xl font-bold mb-4">
         👋 Hello, I'm Carlos Alberto Sanchez
       </h1>
@@ -26,7 +39,7 @@ export default function Page() {
       <p className="text-lg max-w-2xl mb-6">
         Welcome to my personal sample application. This project was built by myself to
         demonstrate my knowledge and skills as a full-stack developer using
-        modern web technologies. It’s intended as a live portfolio to accompany
+        modern web technologies. It's intended as a live portfolio to accompany
         my resume and provide potential employers with a practical showcase of
         my work.
       </p>
@@ -91,4 +104,3 @@ export default function Page() {
     </main>
   );
 }
-

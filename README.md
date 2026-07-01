@@ -19,4 +19,10 @@ How to run:
 
     npm run dev
 
+---
+
+## Authentication
+
+A Google OAuth login is available. Users can click the **Login with Google** button on the home page, which will open Google's consent screen. After successful authentication the app redirects to the `/welcome` page. There is no automatic login triggered on load – the user must click the button to start the flow.
+
     
