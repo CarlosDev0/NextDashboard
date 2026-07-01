@@ -26,7 +26,7 @@ function getErrorMessage(errorCode: string | null): string | null {
 export default function LoginForm() {
   const [isLoading, setIsLoading] = useState(false);
   const searchParams = useSearchParams();
-  const errorCode = searchParams.get('error');
+  const errorCode = searchParams?.get('error') ?? null;
   const errorMessage = getErrorMessage(errorCode);
 
   const handleGoogleSignIn = () => {
