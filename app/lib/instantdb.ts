@@ -1,18 +1,44 @@
 import { init, id } from '@instantdb/admin';
 
-// Initialize InstantDB admin
-const initInstantDB = () => {
+// Lazy database instance - configuration may not exist during build time
+let _db: ReturnType<typeof init> | null = null;
+
+function getDb(): ReturnType<typeof init> {
+  if (_db) return _db;
+
   const appId = process.env.INSTANTDB_APP_ID;
   const adminToken = process.env.INSTANTDB_ADMIN_TOKEN;
 
   if (!appId || !adminToken) {
+    // If the variables are missing, we do not want to crash the build.
+    // When running in development without InstantDB configured we can
+    // return a stub implementation. In production the routes that
+    // actually use the database should handle the absence of a real
+    // connection.
+    if (process.env.NODE_ENV === 'development') {
+      console.warn('InstantDB not configured; using stub implementation');
+      _db = {
+        query: async () => ({ whitelists: [] }),
+        transact: async () => {},
+        tx: { whitelists: {} as any },
+      } as any;
+      return _db!;
+    }
     throw new Error('Missing InstantDB configuration');
   }
 
-  return init({ appId, adminToken });
-};
+  _db = init({ appId, adminToken });
+  return _db;
+}
 
-export const db = initInstantDB();
+// Since the actual InstantDB types are complicated and we only
+// ever call a small subset of methods, mark the export as `any` to
+// keep the type checker happy during build.
+export const db: any = {
+  query: async (...args: any[]) => (getDb().query as any)(...args),
+  transact: async (...args: any[]) => (getDb().transact as any)(...args),
+  tx: () => getDb().tx,
+};
 
 // Schema for user whitelist
 export const usersSchema = {
@@ -29,7 +55,9 @@ export async function isUserWhitelisted(email: string): Promise<{ allowed: boole
   try {
     const data = await db.query({
       whitelists: {
-        where: { email },
+        $: {
+          where: { email },
+        },
       },
     });
 
@@ -49,7 +77,7 @@ export async function addToWhitelist(email: string, name: string, role: string =
   try {
     const newId = id();
     await db.transact([
-      db.tx.whitelists[newId].update({
+      db.tx().whitelists[newId].update({
         email,
         name,
         role,

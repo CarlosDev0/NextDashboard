@@ -2,11 +2,32 @@
 
 import { useState } from 'react';
 import { signIn } from 'next-auth/react';
+import { useSearchParams } from 'next/navigation';
 import { lusitana } from '@/app/ui/fonts';
 import { Button } from './button';
 
+const ERROR_MESSAGES: Record<string, string> = {
+  AccessDenied:
+    'Your account is not authorized. Contact an administrator to be added to the whitelist.',
+  Configuration:
+    'Sign-in is temporarily unavailable. Please try again later.',
+  OAuthSignin: 'Could not start Google sign-in. Please try again.',
+  OAuthCallback: 'Google sign-in failed. Please try again.',
+  OAuthAccountNotLinked:
+    'This email is linked to another sign-in method. Use the same provider you used before.',
+  Default: 'An error occurred during sign-in. Please try again.',
+};
+
+function getErrorMessage(errorCode: string | null): string | null {
+  if (!errorCode) return null;
+  return ERROR_MESSAGES[errorCode] ?? ERROR_MESSAGES.Default;
+}
+
 export default function LoginForm() {
   const [isLoading, setIsLoading] = useState(false);
+  const searchParams = useSearchParams();
+  const errorCode = searchParams.get('error');
+  const errorMessage = getErrorMessage(errorCode);
 
   const handleGoogleSignIn = () => {
     setIsLoading(true);
@@ -19,19 +40,28 @@ export default function LoginForm() {
         <h1 className={`${lusitana.className} mb-3 text-2xl`}>
           Please log in to continue.
         </h1>
-        
+
+        {errorMessage && (
+          <div
+            role="alert"
+            className="mb-4 rounded-md border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700"
+          >
+            {errorMessage}
+          </div>
+        )}
+
         <p className="mb-6 text-sm text-gray-600">
           Click the button below to sign in with your Google account.
           You will be redirected to Google to choose or enter your email address.
         </p>
-        
-        <Button 
+
+        <Button
           type="button"
           onClick={handleGoogleSignIn}
           className="w-full bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 flex items-center justify-center gap-3 py-3"
           disabled={isLoading}
         >
-          <svg className="w-5 h-5" viewBox="0 0 24 24">
+          <svg className="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true">
             <path
               fill="#4285F4"
               d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"

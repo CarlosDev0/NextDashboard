@@ -1,7 +1,8 @@
 'use client'
 import AcmeLogo from "@/app/ui/acme-logo";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
+import { signIn } from 'next-auth/react';
+import { Button } from "@/app/ui/button";
 import { lusitana } from "@/app/ui/fonts";
 import Image from "next/image";
 import "./ui/global.css";
@@ -17,15 +18,18 @@ export default function Page() {
     aiAgentWakeUpService();
     // GetQuestion(0);
   }, []);
+
+  const handleLogin = () => {
+    // redirect the user to Google OAuth and then to the welcome page
+    signIn('google', { callbackUrl: '/welcome' });
+  };
+
   return (
     <main className="flex flex-col items-center justify-center px-4 py-10 text-center">
       <div className="mb-6">
-        <Link
-          href="/login"
-          className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors inline-block"
-        >
+        <Button onClick={handleLogin} className="px-6 py-2">
           Login with Google
-        </Link>
+        </Button>
       </div>
       
       <h1 className="text-4xl font-bold mb-4">
